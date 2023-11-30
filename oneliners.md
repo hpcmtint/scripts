@@ -283,7 +283,7 @@ This function defines a quick calculator on the command line with variable preci
 $ function qqbc() { echo "scale=${2:-2}; $1" | bc -l
 ```
 
-Next, perform a quick calculation:
+### Next, perform a quick calculation:
 
 ```
 $ qqbc "2/3"
