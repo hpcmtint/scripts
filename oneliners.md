@@ -318,3 +318,28 @@ $ docker run --rm --interactive curlimages/curl curl \
 --verbose --location --fail --silent --output - \
 https://example.com
 ```
+
+### Weather
+
+```
+weather(){ curl -s "wttr.in/$1?m1"} 
+```
+
+### Timer
+
+A timer which counts till the specified number of seconds, and then rings a bell. Equivalent of ‘set timer x’ on google on terminal (without requiring internet connection).
+
+```
+function count() { 
+  total=$1 
+  for ((i=total; i>0; i--)); do sleep 1; printf "Time remaining $i secs \r"; done 
+  echo -e "\a" 
+} 
+```
+
+### Up
+```
+function up() { 
+  times=$1 
+  wh 
+```
